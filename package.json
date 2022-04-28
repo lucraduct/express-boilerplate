@@ -1,0 +1,39 @@
+{
+  "name": "@lucraduct/express-boilerplate",
+  "description": "Nodejs ExpressJs Backend Boilerplate",
+  "version": "1.0.0",
+  "homepage": "https://lucraduct.com/",
+  "author": {
+    "name": "Paravada Naveen Teja",
+    "email": "dora.naveen@gmail.com",
+    "url": "https://www.pnaveenteja.com/"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env NODE_ENV=development nodemon"
+  },
+  "keywords": [
+    "NodeJs",
+    "ExpressJs",
+    "Backend",
+    "Logger"
+  ],
+  "license": "MIT",
+  "extends": "eslint:recommended",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^4.5.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.1",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "eslint": "^8.14.0",
+    "nodemon": "^2.0.15"
+  }
+}
