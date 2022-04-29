@@ -16,17 +16,16 @@ var _db;
 
 //Initialze DB Here
 module.exports = {
-  init: function (callback) {
-    client.connect(
+  init: async function (callback) {
+    await client.connect(
       uri,
       { useNewUrlParser: true, useUnifiedTopology: true },
-      async function (err, client) {
+      function (err, client) {
         if (err) {
           logger.error(err);
           return callback(err);
         } else {
           _db = client.db("lucraduct-boilerplate");
-          await _db.command({ ping: 1 });
           logger.info("MongoDb Connected Successfully");
           logger.info(uri);
           logger.info("Checking for Databases");
